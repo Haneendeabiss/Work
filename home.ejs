@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing: border-box}
+
+/* Set height of body and the document to 100% */
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family:cursive;
+}
+
+/* Style tab links */
+.tablink {
+    background-color: #555;
+    color: white;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    font-size: 17px;
+    width: 25%;
+}
+
+.tablink:hover {
+    background-color: #777;
+}
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+
+
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+    color: white;
+    display: none;
+    padding: 100px 20px;
+    height: 100%;
+}
+
+#Story {background-color:lightcoral}
+#Skills {background-color:orchid;}
+#Contact {background-color:purple;}
+#About {background-color:darkorchid;}
+</style>
+</head>
+<body>
+
+<button class="tablink" onclick="openPage('Story', this, 'lightcoral')">Story</button>
+<button class="tablink" onclick="openPage('Skills', this, 'orchid')" id="defaultOpen">Skills</button>
+<button class="tablink" onclick="openPage('Contact', this, 'purple')">Contact</button>
+<button class="tablink" onclick="openPage('About', this, 'darkorchid')">About</button>
+
+<div id="Story" class="tabcontent">
+ 
+ <br>   
+<h1><em>HANEEN DEABISS</em></h1>    
+<img src="pic.jpg" alt="Haneen Deabiss">
+<br>
+<ul><li>IT specialist with 1 year experience in information security and digital forensics.</li>
+    <br>
+<li>Expert and highly familiar with a wide variety of security, engineering, networking, and operating system software.</li.>
+
+</ul>
+</div>
+<br>
+<div id="Skills" class="tabcontent">
+  <h1>Skills</h1>
+  <p><em>TECHNICAL SKILLS :</em></p>
+<ul><li>
+<strong>Security :</strong><p>McAfee SIEM/EPO/NSM, Juniper NetScreen/Palo Alto Networks firewall, Anti-virus Cloud.</p></li>
+<li><strong>Networking:</strong><p>TCPView packet analysis, DNS servers, mail server</p>
+</li>
+<li><strong>SYSTEMS:</strong><p>XP, 7, 8; Linux including CentOS, Ubuntu, Arch, Debian, BackTrack, and Kali.</p></li>
+
+</ul>  
+  
+    
+</div>
+
+<div id="Contact" class="tabcontent">
+  <p><h1>Get in touch, or swing by for a cup of coffee!</h1></p>
+  <ul><li><p>Telephone : +962 789 343 500</p></li>
+  <li><p>Country : Jordan - Irbid - Aydon Street </p></li>
+  <p><li>Mailbox : 20001 - Jordan mailbox</li></p>
+  <p><li>E-mail : Networker.haneen@gmail.com</li></p>
+  <p><em><h3>Social media : </em></h3></p>
+   <ul><li> Facebook : </li> <a href="https://www.facebook.com/haneen.deabiss">Facebook</a>
+<li>Twitter : </li> <a href="https://twitter.com/haneen_edaibiss ">Twitter</a>
+<li>LinkIn : </li> <a href="https://www.linkedin.com/in/haneendeabiss/ ">LinkIn</a>
+
+
+</ul></p>
+  
+
+</div>
+
+<div id="About" class="tabcontent">
+    <h1><it>About</it></h1>
+    <ul><li><p>Having a bachelor degree of Network engineering and Security with a network background especially as solution architect with understanding how the services can work together.</p></li>
+  
+        <li><p>Doing self-study to get a vendor certification like a Cisco Certified Network Associate (CCNA).</p></li>
+            
+        <li><p>I am translator, voice-over, writer, editor in the humanitarian and journalism fields.</p></li>
+            
+        <li><p>Voice over is my passion!</p></li>
+        <p><li>Write articles / Blogging / Editing both in Arabic and English with excellent language.</li></p>
+        <p><li>Specialist in social media / Manage resources.</li></p>
+        </ul>
+
+    
+</div>
+
+<script>
+function openPage(pageName,elmnt,color) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablink");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].style.backgroundColor = "";
+    }
+    document.getElementById(pageName).style.display = "block";
+    elmnt.style.backgroundColor = color;
+
+}
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+     
+     
+</body>
+</html> 
